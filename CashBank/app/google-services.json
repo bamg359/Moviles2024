@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "13917935230",
+    "firebase_url": "https://cash-bank-9d3e4-default-rtdb.firebaseio.com",
+    "project_id": "cash-bank-9d3e4",
+    "storage_bucket": "cash-bank-9d3e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13917935230:android:e058c4538927e7c3d42a2f",
+        "android_client_info": {
+          "package_name": "co.com.cesde.cashbank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1yN_T_cU00rfreSSuild3bwHpNJ7gWLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

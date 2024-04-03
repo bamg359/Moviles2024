@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1029094975533",
+    "firebase_url": "https://servicedesk-e3ec9-default-rtdb.firebaseio.com",
+    "project_id": "servicedesk-e3ec9",
+    "storage_bucket": "servicedesk-e3ec9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029094975533:android:73029013fafee1f935f0a4",
+        "android_client_info": {
+          "package_name": "co.com.cesde.servicedesk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkYUjZqpdJRo0SlXz7-7DbdIBB6HGOSSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
