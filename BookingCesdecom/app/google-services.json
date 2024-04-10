@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "790949386970",
+    "firebase_url": "https://bookingcesde-com-715af-default-rtdb.firebaseio.com",
+    "project_id": "bookingcesde-com-715af",
+    "storage_bucket": "bookingcesde-com-715af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790949386970:android:3be014e10215ab63b1a3e3",
+        "android_client_info": {
+          "package_name": "co.com.cesde.bookingcesdecom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAqOk2Vdq5zk8LZIPovU79NtoouQ7r_Og"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
