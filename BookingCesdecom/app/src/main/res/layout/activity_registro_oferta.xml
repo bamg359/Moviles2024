@@ -85,6 +85,7 @@
             android:id="@+id/txt_descuento"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:textSize="30sp"
             android:hint="Descuento" />
 
         <ImageView

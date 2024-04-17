@@ -11,17 +11,26 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnIrCrearOferta;
 
+    Button btnIrReserva;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         btnIrCrearOferta = findViewById(R.id.btn_creador_oferta);
-
+        btnIrReserva = findViewById(R.id.btn_ir_reserva);
         btnIrCrearOferta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 irCrearOferta();
+            }
+        });
+
+        btnIrReserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irReservar();
             }
         });
 
@@ -34,4 +43,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RegistroOferta.class);
         startActivity(intent);
     }
+
+
+    public void irReservar(){
+        Intent intent = new Intent(this, VerOferta.class);
+        startActivity(intent);
+    }
+
 }

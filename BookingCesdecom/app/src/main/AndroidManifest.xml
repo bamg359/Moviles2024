@@ -13,6 +13,9 @@
         android:theme="@style/Theme.BookingCesdecom"
         tools:targetApi="31">
         <activity
+            android:name=".VerOferta"
+            android:exported="false" />
+        <activity
             android:name=".RegistroOferta"
             android:exported="false" />
         <activity
