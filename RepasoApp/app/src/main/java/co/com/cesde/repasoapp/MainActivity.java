@@ -3,6 +3,7 @@ package co.com.cesde.repasoapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,49 +13,55 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
 
-    Button btnSumar;
-    EditText inputDato1;
-    EditText inputDato2;
-    TextView txtResultado;
+
+   Button btnIrRegistro;
+
+   Button btnIrInicioSesion;
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
-        btnSumar = findViewById(R.id.btn_sumar);
-        txtResultado = findViewById(R.id.txt_ver_dato);
-        inputDato1 = findViewById(R.id.input_dato_1);
-        inputDato2 = findViewById(R.id.input_dato_2);
+        btnIrRegistro = findViewById(R.id.btn_ir_registro);
+        btnIrInicioSesion = findViewById(R.id.btn_ir_inicio_sesion);
 
-
-
-        btnSumar.setOnClickListener(new View.OnClickListener() {
+        btnIrRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                int dato1 = Integer.parseInt(inputDato1.getText().toString());
-                int dato2 = Integer.parseInt(inputDato2.getText().toString());
-
-                int resultadoSuma = sumar(dato1,dato2);
-
-                String resultado = resultadoSuma + "";
-
-                txtResultado.setText(resultado);
+                irRegistro();
             }
         });
+
+        btnIrInicioSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irInicioSesion();
+            }
+        });
+
 
 
     }
 
     // Metodos propios
 
-    public int sumar(int dato1 , int dato2){
+    public void irRegistro(){
 
-        int resultSuma = dato1 + dato2;
+        Intent intent = new Intent(this, Registro.class);
 
-        return resultSuma;
+        startActivity(intent);
     }
+
+    public void irInicioSesion(){
+
+        Intent intent = new Intent(this, InicioSesion.class);
+
+        startActivity(intent);
+    }
+
+
 }
