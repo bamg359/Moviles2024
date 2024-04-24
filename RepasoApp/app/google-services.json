@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "232714138004",
+    "firebase_url": "https://repaso-cashbank-default-rtdb.firebaseio.com",
+    "project_id": "repaso-cashbank",
+    "storage_bucket": "repaso-cashbank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232714138004:android:1345695cc714ebf9b15f81",
+        "android_client_info": {
+          "package_name": "co.com.cesde.repasoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq-QNZt8jNJf7B_YFZG5WgD9xQ7bTJUBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
