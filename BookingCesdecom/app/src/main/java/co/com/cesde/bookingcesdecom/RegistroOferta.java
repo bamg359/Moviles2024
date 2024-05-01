@@ -64,7 +64,7 @@ public class RegistroOferta extends AppCompatActivity {
 
     public void registrarOferta(){
 
-        int idReserva = Integer.parseInt(inputCodigoOferta.getText().toString());
+        int idReserva = Integer.parseInt( inputCodigoOferta.getText().toString());
 
         DatabaseReference nuevaOferta = reference.child(String.valueOf(idReserva));
 
@@ -106,10 +106,6 @@ public class RegistroOferta extends AppCompatActivity {
         Intent intent= new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-
-
-
-
 
 
 }
