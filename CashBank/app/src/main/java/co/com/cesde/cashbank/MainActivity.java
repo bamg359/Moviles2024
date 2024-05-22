@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     Button btnIrRegistro;
+    Button btnIrInicioSesion;
 
 
 
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnIrRegistro = findViewById(R.id.btn_registro);
 
+        btnIrInicioSesion = findViewById(R.id.btn_inicio);
+
 
 
 
@@ -37,11 +40,27 @@ public class MainActivity extends AppCompatActivity {
                 irRegistro();
             }
         });
+
+        btnIrInicioSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irInicioSesion();
+            }
+        });
+
+
+
     }
 
     public void irRegistro(){
 
         Intent intent = new Intent(this, Registro.class);
+        startActivity(intent);
+    }
+
+    public void irInicioSesion(){
+
+        Intent intent = new Intent(this, InicioSesion.class);
         startActivity(intent);
     }
 
