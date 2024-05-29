@@ -10,64 +10,74 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="78dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="129dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btn_datos"
+        android:id="@+id/bnt_ir_datos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/sym_def_app_icon"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="355dp" />
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="Datos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_saldo"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <ImageButton
         android:id="@+id/btn_movimientos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/sym_def_app_icon"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="355dp" />
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:contentDescription="Movimientos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_saldo"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <ImageButton
         android:id="@+id/btn_transferir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/sym_def_app_icon"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="467dp" />
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="Transferir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_ir_datos"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <ImageButton
         android:id="@+id/btn_retirar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/sym_def_app_icon"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="467dp" />
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:contentDescription="Retirar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_movimientos"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <Button
         android:id="@+id/btn_salir"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="Salir"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="621dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_transferir" />
 
     <TextView
         android:id="@+id/txt_saldo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="302dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

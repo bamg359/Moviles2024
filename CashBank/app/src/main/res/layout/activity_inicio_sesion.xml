@@ -21,8 +21,8 @@
 
     <EditText
         android:id="@+id/input_correo_cliente"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
         android:layout_marginTop="261dp"
         android:layout_marginBottom="261dp"
         android:ems="10"
@@ -36,7 +36,7 @@
     <EditText
         android:id="@+id/input_clave_cliente"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="37dp"
         android:ems="10"
         android:hint="Password"
