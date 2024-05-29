@@ -7,68 +7,90 @@
     tools:context=".DataCliente">
 
     <LinearLayout
-        android:layout_width="363dp"
-        android:layout_height="108dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="95dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="261dp">
+        app:layout_constraintBottom_toTopOf="@+id/btn_consultar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_tel_cliente">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/txt_tel_cliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Telefono" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/txt_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Nombre" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/txt_correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Correo" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/txt_clave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Clave" />
     </LinearLayout>
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/input_tel_cliente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="42dp"
         android:ems="10"
+        android:hint="Telefono"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="172dp" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="112dp" />
+        android:layout_marginTop="81dp"
+        android:layout_marginBottom="40dp"
+        android:text="Datos Cliente"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/input_tel_cliente"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_consultar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="462dp" />
+        android:layout_marginBottom="26dp"
+        android:text="Consultar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_volver_dash"
+        app:layout_constraintEnd_toEndOf="@+id/btn_volver_dash"
+        app:layout_constraintStart_toStartOf="@+id/btn_volver_dash"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_volver_dash"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="538dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="145dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/input_tel_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/btn_consultar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
