@@ -31,10 +31,19 @@ public class DashBoardCliente extends AppCompatActivity {
 
         btnSalir = findViewById(R.id.btn_salir);
 
+        btnIrTranferencias = findViewById(R.id.btn_transferir);
+
         btnIrData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 irDatosUsuario();
+            }
+        });
+
+        btnIrTranferencias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irTranferencias();
             }
         });
 
@@ -54,6 +63,12 @@ public class DashBoardCliente extends AppCompatActivity {
     public void irDatosUsuario(){
 
         Intent intent = new Intent(this, DataCliente.class);
+        startActivity(intent);
+    }
+
+    public void irTranferencias(){
+
+        Intent intent = new Intent(this, Transferencia.class);
         startActivity(intent);
     }
 

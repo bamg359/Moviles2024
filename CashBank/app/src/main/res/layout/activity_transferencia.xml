@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transferencia">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="75dp"
+        android:text="Tranferir Recursos"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/input_tel_origen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_tel_origen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="Origen"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/input_tel_destino"
+        app:layout_constraintStart_toStartOf="@+id/input_tel_destino" />
+
+    <EditText
+        android:id="@+id/input_tel_destino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="destino"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/input_cantidad"
+        app:layout_constraintStart_toStartOf="@+id/input_cantidad" />
+
+    <Button
+        android:id="@+id/btn_transferir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Transferir"
+        app:layout_constraintBottom_toTopOf="@+id/btn_volver_dash2"
+        app:layout_constraintEnd_toEndOf="@+id/input_cantidad"
+        app:layout_constraintStart_toStartOf="@+id/input_cantidad" />
+
+    <Button
+        android:id="@+id/btn_volver_dash2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_transferir"
+        app:layout_constraintStart_toStartOf="@+id/btn_transferir" />
+
+    <EditText
+        android:id="@+id/input_cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="317dp"
+        android:ems="10"
+        android:hint="cantidad"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_origen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="34dp"
+        android:hint="Cuenta Origen"
+        app:layout_constraintStart_toStartOf="@+id/input_cantidad"
+        app:layout_constraintTop_toBottomOf="@+id/input_cantidad" />
+
+    <TextView
+        android:id="@+id/txt_cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="cantidad"
+        app:layout_constraintStart_toStartOf="@+id/txt_origen"
+        app:layout_constraintTop_toBottomOf="@+id/txt_origen" />
+</androidx.constraintlayout.widget.ConstraintLayout>
