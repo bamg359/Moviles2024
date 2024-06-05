@@ -7,70 +7,101 @@
     tools:context=".VerDatosCliente">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tag_datos_cliente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="134dp" />
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="60dp"
+        android:text="Datos Cliente"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/input_id_consulta_usuario"
+        app:layout_constraintStart_toStartOf="@+id/input_id_consulta_usuario"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="301dp"
-        android:layout_height="259dp"
+        android:id="@+id/linearLayout7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="26dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="225dp">
+        app:layout_constraintBottom_toTopOf="@+id/btn_ver_datos_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_id_consulta_usuario">
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/txt_ver_id_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Id de Usuario" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/txt_ver_nombre_usuario2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Nombre" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/txt_ver_apellido_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Apellido" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/txt_ver_tel_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Telefono" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/txt_ver_correo_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Correo" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/txt_ver_password_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="********" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_ver_datos_usuario"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="512dp" />
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="10dp"
+        android:text="Consultar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_volver_dashboard1"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
+        app:layout_constraintStart_toStartOf="@+id/input_id_consulta_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_volver_dashboard1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ver_datos_usuario"
+        app:layout_constraintStart_toStartOf="@+id/btn_ver_datos_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ver_datos_usuario" />
+
+    <EditText
+        android:id="@+id/input_id_consulta_usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="560dp" />
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Id de Usuario"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag_datos_cliente" />
 </androidx.constraintlayout.widget.ConstraintLayout>

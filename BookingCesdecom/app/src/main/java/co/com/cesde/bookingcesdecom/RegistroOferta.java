@@ -103,7 +103,7 @@ public class RegistroOferta extends AppCompatActivity {
 
     public void cancelarCrearOferta(){
 
-        Intent intent= new Intent(this, MainActivity.class);
+        Intent intent= new Intent(this, Dashboard.class);
         startActivity(intent);
     }
 

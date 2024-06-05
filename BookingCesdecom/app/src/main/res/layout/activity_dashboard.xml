@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:layout_marginEnd="38dp"
+        android:layout_marginEnd="36dp"
         android:contentDescription="Creador Oferta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_ver_nombre_usuario"
@@ -49,7 +49,7 @@
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <ImageButton
-        android:id="@+id/btn_ir_acerca_app"
+        android:id="@+id/btn_ir_reservas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
