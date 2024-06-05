@@ -81,6 +81,10 @@ public class Registro extends AppCompatActivity {
         String clave = inputClave.getText().toString();
         nuevoUsuario.child("Clave: ").setValue(clave);
 
+        double saldo = 0;
+
+        nuevoUsuario.child("Saldo").setValue(saldo);
+
         Toast.makeText(getApplicationContext(),"Registro Creado", Toast.LENGTH_LONG).show();
     }
 }
