@@ -1,5 +1,6 @@
 package co.com.cesde.cashbank;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -10,6 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -29,6 +34,8 @@ public class Registro extends AppCompatActivity {
     EditText inputCorreo;
 
     EditText inputClave;
+
+    FirebaseAuth auth = FirebaseAuth.getInstance();
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -85,6 +92,33 @@ public class Registro extends AppCompatActivity {
 
         nuevoUsuario.child("Saldo").setValue(saldo);
 
+        registroFireBaseAuth(correo, clave);
+
         Toast.makeText(getApplicationContext(),"Registro Creado", Toast.LENGTH_LONG).show();
     }
+
+    public void registroFireBaseAuth(String correo, String clave){
+
+        auth.createUserWithEmailAndPassword(correo, clave)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+
+                            Toast.makeText(Registro.this, "Cuenta Creada Correctamente", Toast.LENGTH_LONG).show();
+
+                        } else {
+                            // If sign in fails, display a message to the user.
+
+                            Toast.makeText(Registro.this, "La cuenta no fue creada correctamente", Toast.LENGTH_LONG).show();
+
+                        }
+                    }
+                });
+    }
+
+
+
+
+
 }
